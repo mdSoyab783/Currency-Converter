@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.container {
+  width: 400px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #0f172a;
+}
+
+.amount {
+  margin-bottom: 25px;
+}
+
+.amount label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.amount input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.amount input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.from,
+.to {
+  width: 45%;
+}
+
+.from p,
+.to p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 7px;
+  background-color: #fff;
+}
+
+.select-container img {
+  width: 32px;
+  height: 24px;
+  object-fit: cover;
+  margin-right: 7px;
+}
+
+.select-container select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.dropdown > i {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #2563eb;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.dropdown > i:hover {
+  transform: rotate(180deg);
+}
+
+.msg {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #334155;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .dropdown {
+    gap: 8px;
+  }
+
+  .select-container {
+    padding: 5px;
+  }
+
+  .select-container img {
+    width: 28px;
+    height: 21px;
+    margin-right: 4px;
+  }
+
+  .select-container select {
+    font-size: 13px;
+  }
+
+  .dropdown > i {
+    font-size: 16px;
+  }
+}
